@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kelly Springs of Wisdom Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0A1C4D',
+                        brandGold: '#D4AF37',
+                        brandCream: '#F9F7F1',
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandCream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-brandBlue text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                
+                <!-- OFFICIAL LOGO -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img src="logo.png" alt="Kelly Springs Logo" class="h-14 w-14 rounded-full border-2 border-brandGold bg-white object-contain p-0.5 shadow-sm">
+                    <div>
+                        <h1 class="font-bold text-lg leading-tight text-white">Kelly Springs</h1>
+                        <p class="text-xs text-brandGold tracking-widest uppercase hidden sm:block">Of Wisdom Academy</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="hover:text-brandGold transition">Home</a>
+                    <a href="about.html" class="hover:text-brandGold transition">About Us</a>
+                    <a href="admissions.html" class="hover:text-brandGold transition">Admissions</a>
+                    <a href="curriculum.html" class="hover:text-brandGold transition">Curriculum</a>
+                    <a href="gallery.html" class="hover:text-brandGold transition">Gallery</a>
+                    <a href="contact.html" class="text-brandGold border-b-2 border-brandGold pb-1">Contact</a>
+                </div>
+                
+                <!-- Desktop CTA Button -->
+                <div class="hidden md:block">
+                    <a href="admissions.html" class="bg-brandGold text-brandBlue px-6 py-2.5 rounded-full font-semibold hover:bg-yellow-500 transition shadow-lg">Book a Tour</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brandGold focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandBlue border-t border-blue-900">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">About Us</a>
+                <a href="admissions.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Admissions</a>
+                <a href="curriculum.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Curriculum</a>
+                <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Gallery</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-brandGold hover:text-brandGold hover:bg-blue-900">Contact</a>
+                <a href="admissions.html" class="block mt-4 text-center bg-brandGold text-brandBlue px-3 py-2 rounded-full font-semibold">Book a Tour</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="bg-brandBlue py-16 text-center border-b-4 border-brandGold">
+        <h1 class="text-4xl font-bold text-white mb-4">Get in Touch</h1>
+        <p class="text-gray-300 max-w-2xl mx-auto px-4">We would love to hear from you. Reach out with any questions or to schedule a visit.</p>
+    </header>
+
+    <!-- CONTENT SECTION -->
+    <section class="py-16 bg-brandCream flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Left Side: Contact Info & Map -->
+                <div>
+                    <h2 class="text-2xl font-bold text-brandBlue mb-6">Contact Information</h2>
+                    
+                    <div class="space-y-6 mb-10">
+                        <!-- Address -->
+                        <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                            <div class="w-12 h-12 bg-brandBlue rounded-full flex items-center justify-center text-brandGold text-xl flex-shrink-0">
+                                📍
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-brandBlue mb-1">Our Location</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">No. 4 Udemezue Street, off MCC Road,<br>Owerri, Imo State, Nigeria.</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone & Email -->
+                        <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                            <div class="w-12 h-12 bg-brandBlue rounded-full flex items-center justify-center text-brandGold text-xl flex-shrink-0">
+                                📞
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-brandBlue mb-1">Call or Email Us</h3>
+                                <p class="text-gray-600 text-sm mb-1">Phone: <a href="tel:+2348055484142" class="hover:text-brandGold transition">0805 548 4142</a></p>
+                                <p class="text-gray-600 text-sm">Email: <a href="mailto:ksowacademy4@gmail.com" class="text-brandBlue hover:text-brandGold transition font-semibold">ksowacademy4@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                            <div class="w-12 h-12 bg-brandBlue rounded-full flex items-center justify-center text-brandGold text-xl flex-shrink-0">
+                                🕒
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-brandBlue mb-1">School Hours</h3>
+                                <p class="text-gray-600 text-sm">Monday - Friday: 7:00 AM - 2:00 PM</p>
+                                <p class="text-gray-600 text-sm">Saturday & Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="bg-gray-300 w-full h-64 rounded-3xl flex items-center justify-center border-4 border-brandGold shadow-lg">
+                        <p class="text-gray-600 font-semibold text-center px-4">[ Google Map Embed Goes Here ]<br><span class="text-sm font-normal">(Udemezue Street, Owerri)</span></p>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+                    <h2 class="text-2xl font-bold text-brandBlue mb-2">Send Us a Message</h2>
+                    <p class="text-gray-500 mb-8 text-sm">Have a question? Fill out the form below and we will get back to you as soon as possible.</p>
+                    
+                    <!-- Form -->
+                    <form action="#" method="POST" class="space-y-5">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandBlue focus:border-transparent transition">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandBlue focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandBlue focus:border-transparent transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandBlue focus:border-transparent transition resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brandBlue text-white font-bold py-4 rounded-lg hover:bg-blue-900 transition shadow-lg mt-2">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandBlue text-white py-12 border-t-4 border-brandGold mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <!-- FOOTER LOGO -->
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="logo.png" alt="Kelly Springs Logo" class="h-12 w-12 rounded-full border-2 border-brandGold bg-white object-contain p-0.5">
+                    <h3 class="text-xl font-bold">Kelly Springs</h3>
+                </div>
+                <p class="text-sm text-gray-300">Raising Greater Leaders through Education and Wisdom.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-brandGold">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="admissions.html" class="hover:text-white">Admissions</a></li>
+                    <li><a href="gallery.html" class="hover:text-white">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-brandGold">Contact Us</h4>
+                <p class="text-sm text-gray-300 mb-2">No. 4 Udemezue Street, off MCC Road, Owerri, Imo State.</p>
+                <p class="text-sm text-gray-300 mb-1">Phone: <a href="tel:+2348055484142" class="hover:text-brandGold transition">0805 548 4142</a></p>
+                <p class="text-sm text-gray-300">Email: <a href="mailto:ksowacademy4@gmail.com" class="hover:text-brandGold transition">ksowacademy4@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-blue-900 text-center text-xs text-gray-400">
+            &copy; 2024 Kelly Springs of Wisdom Academy. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

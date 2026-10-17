@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Kelly Springs of Wisdom Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0A1C4D',
+                        brandGold: '#D4AF37',
+                        brandCream: '#F9F7F1',
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandCream text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-brandBlue text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                
+                <!-- OFFICIAL LOGO -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img src="logo.png" alt="Kelly Springs Logo" class="h-14 w-14 rounded-full border-2 border-brandGold bg-white object-contain p-0.5 shadow-sm">
+                    <div>
+                        <h1 class="font-bold text-lg leading-tight text-white">Kelly Springs</h1>
+                        <p class="text-xs text-brandGold tracking-widest uppercase hidden sm:block">Of Wisdom Academy</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="hover:text-brandGold transition">Home</a>
+                    <a href="about.html" class="hover:text-brandGold transition">About Us</a>
+                    <a href="admissions.html" class="text-brandGold border-b-2 border-brandGold pb-1">Admissions</a>
+                    <a href="curriculum.html" class="hover:text-brandGold transition">Curriculum</a>
+                    <a href="gallery.html" class="hover:text-brandGold transition">Gallery</a>
+                    <a href="contact.html" class="hover:text-brandGold transition">Contact</a>
+                </div>
+                
+                <!-- Desktop CTA Button -->
+                <div class="hidden md:block">
+                    <a href="admissions.html" class="bg-brandGold text-brandBlue px-6 py-2.5 rounded-full font-semibold hover:bg-yellow-500 transition shadow-lg">Book a Tour</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-brandGold focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandBlue border-t border-blue-900">
+            <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">About Us</a>
+                <a href="admissions.html" class="block px-3 py-2 rounded-md text-base font-medium text-brandGold hover:text-brandGold hover:bg-blue-900">Admissions</a>
+                <a href="curriculum.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Curriculum</a>
+                <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Gallery</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-brandGold hover:bg-blue-900">Contact</a>
+                <a href="admissions.html" class="block mt-4 text-center bg-brandGold text-brandBlue px-3 py-2 rounded-full font-semibold">Book a Tour</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="bg-brandBlue py-16 text-center border-b-4 border-brandGold">
+        <h1 class="text-4xl font-bold text-white mb-4">Join Our Academy</h1>
+        <p class="text-gray-300 max-w-2xl mx-auto px-4">We are delighted you are considering Kelly Springs of Wisdom Academy for your child's educational journey.</p>
+    </header>
+
+    <!-- CONTENT SECTION -->
+    <section class="py-16 bg-brandCream flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- The Process -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brandBlue mb-8">Our Admission Process</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                        <div class="w-10 h-10 bg-brandGold text-brandBlue font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">1</div>
+                        <h3 class="font-bold text-brandBlue mb-2">Enquire</h3>
+                        <p class="text-sm text-gray-600">Request our fee schedule and learn more about our school.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                        <div class="w-10 h-10 bg-brandGold text-brandBlue font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">2</div>
+                        <h3 class="font-bold text-brandBlue mb-2">Book a Tour</h3>
+                        <p class="text-sm text-gray-600">Visit our campus in Owerri and meet our dedicated staff.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                        <div class="w-10 h-10 bg-brandGold text-brandBlue font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">3</div>
+                        <h3 class="font-bold text-brandBlue mb-2">Apply</h3>
+                        <p class="text-sm text-gray-600">Complete the application form and provide necessary documents.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                        <div class="w-10 h-10 bg-brandGold text-brandBlue font-bold rounded-full flex items-center justify-center mx-auto mb-4 text-lg">4</div>
+                        <h3 class="font-bold text-brandBlue mb-2">Enroll</h3>
+                        <p class="text-sm text-gray-600">Accept your offer and officially join the Kelly Springs family.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Left Side: Class Levels -->
+                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+                    <h2 class="text-2xl font-bold text-brandBlue mb-6">Our Class Levels</h2>
+                    <p class="text-gray-600 mb-6 text-sm">We provide a seamless educational journey from early years to primary education.</p>
+                    
+                    <div class="space-y-6">
+                        <!-- Early Years -->
+                        <div>
+                            <h3 class="text-lg font-bold text-brandGold mb-3 flex items-center gap-2">
+                                <span class="w-2 h-2 bg-brandGold rounded-full"></span> Early Years
+                            </h3>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Toddler</div>
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Reception 1</div>
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Reception 2</div>
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Transition</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Primary -->
+                        <div>
+                            <h3 class="text-lg font-bold text-brandGold mb-3 flex items-center gap-2 mt-6">
+                                <span class="w-2 h-2 bg-brandGold rounded-full"></span> Primary
+                            </h3>
+                            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Basic 1</div>
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Basic 2</div>
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Basic 3</div>
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Basic 4</div>
+                                <div class="bg-brandCream text-center py-3 rounded-lg border border-gray-200 text-sm font-semibold text-brandBlue">Basic 5</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                        <p class="text-sm text-brandBlue"><strong>Note:</strong> Our curriculum is strictly aligned with the Federal Ministry of Education standards, ensuring your child receives a world-class, recognized education.</p>
+                    </div>
+                </div>
+
+                <!-- Right Side: Request Fee Schedule Form -->
+                <div class="bg-brandBlue p-8 md:p-10 rounded-3xl shadow-lg border-t-8 border-brandGold relative overflow-hidden">
+                    <!-- Decorative background circle -->
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-900 rounded-full opacity-50"></div>
+                    
+                    <h2 class="text-2xl font-bold text-white mb-2 relative z-10">Request Fee Schedule</h2>
+                    <p class="text-gray-300 mb-8 text-sm relative z-10">Fill out this quick form and our admissions team will send you the current fee structure and requirements.</p>
+                    
+                    <!-- Form -->
+                    <form action="#" method="POST" class="space-y-5 relative z-10">
+                        <div>
+                            <label for="parentName" class="block text-sm font-medium text-gray-200 mb-1">Parent/Guardian Name</label>
+                            <input type="text" id="parentName" name="parentName" required class="w-full px-4 py-3 rounded-lg bg-blue-900 border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent transition">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-200 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-lg bg-blue-900 border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-200 mb-1">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-blue-900 border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="childClass" class="block text-sm font-medium text-gray-200 mb-1">Class of Interest</label>
+                            <select id="childClass" name="childClass" required class="w-full px-4 py-3 rounded-lg bg-blue-900 border border-blue-800 text-white focus:outline-none focus:ring-2 focus:ring-brandGold focus:border-transparent transition appearance-none">
+                                <option value="" disabled selected>Select a class...</option>
+                                <option value="Toddler">Toddler</option>
+                                <option value="Reception 1">Reception 1</option>
+                                <option value="Reception 2">Reception 2</option>
+                                <option value="Transition">Transition</option>
+                                <option value="Basic 1">Basic 1</option>
+                                <option value="Basic 2">Basic 2</option>
+                                <option value="Basic 3">Basic 3</option>
+                                <option value="Basic 4">Basic 4</option>
+                                <option value="Basic 5">Basic 5</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brandGold text-brandBlue font-bold py-4 rounded-lg hover:bg-yellow-500 transition shadow-lg mt-4">
+                            Send My Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandBlue text-white py-12 border-t-4 border-brandGold mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <!-- FOOTER LOGO -->
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="logo.png" alt="Kelly Springs Logo" class="h-12 w-12 rounded-full border-2 border-brandGold bg-white object-contain p-0.5">
+                    <h3 class="text-xl font-bold">Kelly Springs</h3>
+                </div>
+                <p class="text-sm text-gray-300">Raising Greater Leaders through Education and Wisdom.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-brandGold">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="admissions.html" class="hover:text-white">Admissions</a></li>
+                    <li><a href="gallery.html" class="hover:text-white">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-brandGold">Contact Us</h4>
+                <p class="text-sm text-gray-300 mb-2">No. 4 Udemezue Street, off MCC Road, Owerri, Imo State.</p>
+                <p class="text-sm text-gray-300 mb-1">Phone: <a href="tel:+2348055484142" class="hover:text-brandGold transition">0805 548 4142</a></p>
+                <p class="text-sm text-gray-300">Email: <a href="mailto:ksowacademy4@gmail.com" class="hover:text-brandGold transition">ksowacademy4@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-blue-900 text-center text-xs text-gray-400">
+            &copy; 2024 Kelly Springs of Wisdom Academy. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
